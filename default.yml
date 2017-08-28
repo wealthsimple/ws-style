@@ -14,6 +14,33 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
 
+Layout/DotPosition:
+  Enabled: false
+
+Layout/ExtraSpacing:
+  Enabled: false
+
+Layout/IndentHash:
+  Enabled: false
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: false
+
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+
+Layout/SpaceBeforeFirstArg:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Lint/IneffectiveAccessModifier:
+  Enabled: false
+
+Lint/UselessAccessModifier:
+  Enabled: false
+
 Metrics/AbcSize:
   Enabled: false
 
@@ -41,10 +68,43 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Enabled: false
 
+Style/Alias:
+  Enabled: false
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false
+
+Style/CommentAnnotation:
+  Enabled: false
+
 Style/Documentation:
   Enabled: false
 
+Style/DoubleNegation:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/InverseMethods:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/NumericPredicate:
   Enabled: false
 
 Style/PercentLiteralDelimiters:
@@ -56,6 +116,12 @@ Style/StringLiterals:
 
 Style/SymbolArray:
   Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
 
 Style/WordArray:
   Enabled: false
