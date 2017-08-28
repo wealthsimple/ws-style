@@ -35,12 +35,6 @@ Layout/SpaceBeforeFirstArg:
 Lint/AmbiguousBlockAssociation:
   Enabled: false
 
-Lint/IneffectiveAccessModifier:
-  Enabled: false
-
-Lint/UselessAccessModifier:
-  Enabled: false
-
 Metrics/AbcSize:
   Enabled: false
 
@@ -96,9 +90,6 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Style/GuardClause:
-  Enabled: false
-
-Style/InverseMethods:
   Enabled: false
 
 Style/Lambda:
