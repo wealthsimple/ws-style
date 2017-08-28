@@ -1,4 +1,4 @@
-# Ws::Style
+# ws-style
 
 Shared [rubocop](https://github.com/bbatsov/rubocop) config to enforce Ruby style consistently across Wealthsimple libraries and services.
 
@@ -7,7 +7,9 @@ Shared [rubocop](https://github.com/bbatsov/rubocop) config to enforce Ruby styl
 Add this line to your application's Gemfile and execute `bundle`:
 
 ```ruby
-gem 'ws-style'
+group :development, :test do
+  gem 'ws-style'
+end
 ```
 
 Or, for a rubygem, add this to your `gemspec`:
