@@ -8,10 +8,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run:
-          name: install dependencies
-          command: |
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run: bundle exec bundle-audit update && bundle exec bundle-audit check
       - run: bundle exec rubocop --config=default.yml
       - run: bundle exec rspec
