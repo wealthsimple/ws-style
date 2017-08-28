@@ -28,11 +28,32 @@ Create a `.rubocop.yml` with the following directives:
 inherit_gem:
   ws-style:
     - default.yml
+
+AllCops:
+  # Specify your target Ruby version here (only major/minor versions):
+  TargetRubyVersion: 2.3
 ```
 
 Check if it works by running `bundle exec rubocop`.
 
-You can optionally override or specify additional style configurations in your `.rubocop.yml`.
+You can optionally override or specify additional style configurations in your `.rubocop.yml`, e.g.:
+
+```yaml
+inherit_gem:
+  ws-style:
+    - default.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - 'db/**/*'
+
+Lint/RescueException:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+```
 
 ## Development
 
