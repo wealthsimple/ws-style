@@ -1,0 +1,50 @@
+# See documentation for details on definitions:
+# https://rubocop.readthedocs.io
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'lib/tasks/circle_0.rake' # Ignore circleci code
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+# Allow use of both single and double quotes for strings.
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
