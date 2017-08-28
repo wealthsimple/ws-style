@@ -2,7 +2,9 @@
 # https://rubocop.readthedocs.io
 
 AllCops:
+  DisplayCopNames: true
   Exclude:
+    - '*.gemspec'
     - 'bin/**/*'
     - 'db/schema.rb'
     - 'db/seeds.rb'
@@ -37,6 +39,15 @@ Metrics/ParameterLists:
   Enabled: false
 
 Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/PercentLiteralDelimiters:
   Enabled: false
 
 # Allow use of both single and double quotes for strings.

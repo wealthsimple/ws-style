@@ -12,9 +12,6 @@ jobs:
           name: install dependencies
           command: |
             bundle install --jobs=4 --retry=3 --path vendor/bundle
-      - run:
-          name:
-          command: bundle exec bundle-audit update && bundle exec bundle-audit check
-      - run:
-          name: run tests
-          command: bundle exec rspec
+      - run: bundle exec bundle-audit update && bundle exec bundle-audit check
+      - run: bundle exec rubocop
+      - run: bundle exec rspec
