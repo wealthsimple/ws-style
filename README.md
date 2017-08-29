@@ -45,7 +45,7 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 2.4
-  Exclude:
+  Include:
     - 'db/**/*'
 
 Lint/RescueException:
