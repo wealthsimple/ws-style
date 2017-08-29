@@ -6,8 +6,8 @@ AllCops:
   Exclude:
     - '*.gemspec'
     - 'bin/**/*'
-    - 'db/schema.rb'
-    - 'db/seeds.rb'
+    - 'data/**/*'
+    - 'db/**/*'
     - 'lib/tasks/circle_0.rake' # Ignore circleci code
     - 'log/**/*'
     - 'public/**/*'
