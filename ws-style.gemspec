@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["peterghm@gmail.com"]
 
   spec.summary       = %q{Shared rubocop config}
-  spec.description   = %q{Shared rubocop config to enforce Ruby style consistently across services.}
+  spec.description   = %q{Shared rubocop config to enforce Ruby style consistently across Wealthsimple services.}
   spec.homepage      = "https://github.com/wealthsimple/ws-style"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
