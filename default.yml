@@ -7,7 +7,7 @@ AllCops:
     - '*.gemspec'
     - 'bin/**/*'
     - 'data/**/*'
-    - 'db/**/*'
+    - 'db/schema.rb'
     - 'lib/tasks/circle_0.rake' # Ignore circleci code
     - 'log/**/*'
     - 'public/**/*'
