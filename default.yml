@@ -1,104 +1,58 @@
-# See documentation for details on definitions:
-# https://rubocop.readthedocs.io
-
 AllCops:
-  DisplayCopNames: true
+  UseCache: true
+  MaxFilesInCache: 20000
   Exclude:
     - '*.gemspec'
     - 'bin/**/*'
     - 'data/**/*'
-    - 'db/schema.rb'
-    - 'lib/tasks/circle_0.rake' # Ignore circleci code
+    - 'db/**/*'
+    - 'lib/tasks/circle_0.rake'
     - 'log/**/*'
+    - 'node_modules/**/*'
     - 'public/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'Guardfile'
 
-Layout/DotPosition:
+Rails:
+  Enabled: true
+
+Rails/Date:
   Enabled: false
 
-Layout/ExtraSpacing:
+Rails/Delegate:
   Enabled: false
 
-Layout/IndentHash:
+Rails/FilePath:
   Enabled: false
 
-Layout/MultilineMethodCallIndentation:
-  Enabled: false
-
-Layout/SpaceBeforeBlockBraces:
-  Enabled: false
-
-Layout/SpaceBeforeFirstArg:
-  Enabled: false
-
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
-
-Metrics/AbcSize:
-  Enabled: false
-
-Metrics/BlockLength:
-  Enabled: false
-
-Metrics/ClassLength:
-  Enabled: false
-
-Metrics/CyclomaticComplexity:
-  Enabled: false
-
-Metrics/LineLength:
-  Enabled: false
-
-Metrics/MethodLength:
-  Enabled: false
-
-Metrics/ModuleLength:
-  Enabled: false
-
-Metrics/ParameterLists:
-  Enabled: false
-
-Metrics/PerceivedComplexity:
-  Enabled: false
-
-Style/Alias:
+Rails/TimeZone:
   Enabled: false
 
 Style/AndOr:
   EnforcedStyle: conditionals
 
+Style/BlockDelimiters:
+  Enabled: false
+
 Style/BracesAroundHashParameters:
   Enabled: false
 
-Style/ClassVars:
-  Enabled: false
-
-Style/CommentAnnotation:
+Style/ClassAndModuleChildren:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Style/FormatString:
-  Enabled: false
-
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-Style/GuardClause:
+Style/Not:
   Enabled: false
 
-Style/Lambda:
+Style/WordArray:
   Enabled: false
 
-Style/NumericPredicate:
-  Enabled: false
-
-Style/PercentLiteralDelimiters:
-  Enabled: false
-
-# Allow use of both single and double quotes for strings.
 Style/StringLiterals:
   Enabled: false
 
@@ -114,5 +68,57 @@ Style/TrailingCommaInArrayLiteral:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
-Style/WordArray:
+Layout/AlignHash:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+
+Layout/AlignParameters:
   Enabled: false
+
+Layout/CaseIndentation:
+  Enabled: false
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EndAlignment:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/AbcSize:
+  Max: 18
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/**/*'
+  IgnoredPatterns: ['(\A|\s)#']
+  Max: 100
+
+Metrics/MethodLength:
+  Max: 12
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 8
