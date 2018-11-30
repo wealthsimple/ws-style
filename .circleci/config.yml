@@ -11,4 +11,7 @@ jobs:
       - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
       - run: bundle exec bundle-audit update && bundle exec bundle-audit check
       - run: bundle exec rubocop --config=default.yml
+      - run:
+          name: Check default.yml for warnings
+          command: "! bundle exec rubocop --config=default.yml 2>&1 | grep 'Warning:'"
       - run: bundle exec rspec
