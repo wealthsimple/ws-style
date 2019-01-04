@@ -1,5 +1,6 @@
-require "bundler/setup"
-require "ws/style"
+require 'bundler/setup'
+require 'ws/style'
+require 'git'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
