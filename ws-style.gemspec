@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.bindir        = 'exe'
   s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
-  s.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   s.add_dependency 'rubocop', '~> 0.60'
 
