@@ -52,6 +52,9 @@ jobs:
   release:
     <<: *defaults
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "46:b5:cb:ee:57:dc:14:95:31:be:12:13:4f:11:94:a4"
       - *attach_code_workspace
       - *restore_bundle_dependencies
       - run:
