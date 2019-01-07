@@ -8,6 +8,7 @@ AllCops:
     - 'bin/**/*'
     - 'data/**/*'
     - 'db/schema.rb'
+    - 'db/data_schema.rb'
     - 'gemfiles/**/*'
     - 'lib/tasks/circle_0.rake' # Ignore circleci code
     - 'log/**/*'
