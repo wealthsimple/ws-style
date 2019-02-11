@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email         = ['peterghm@gmail.com']
 
   s.summary       = 'Shared rubocop config'
-  s.description   = 'Shared rubocop config to enforce Ruby style consistently across Wealthsimple services.'
+  s.description   = 'Shared config to enforce Ruby style consistently across Wealthsimple services.'
   s.homepage      = 'https://github.com/wealthsimple/ws-style'
 
   s.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_dependency 'rubocop', '~> 0.62'
+  s.add_dependency 'rubocop', '~> 0.64'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'bundler-audit'

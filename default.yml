@@ -2,108 +2,95 @@
 # https://rubocop.readthedocs.io
 
 AllCops:
-  DisplayCopNames: true
   Exclude:
-    - '*.gemspec'
     - 'bin/**/*'
     - 'data/**/*'
-    - 'db/schema.rb'
-    - 'db/data_schema.rb'
+    - 'db/**/*'
     - 'gemfiles/**/*'
-    - 'lib/tasks/circle_0.rake' # Ignore circleci code
+    - 'lib/tasks/circle_0.rake'
     - 'log/**/*'
+    - 'node_modules/**/*'
     - 'public/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
 
-Layout/DotPosition:
+Layout/AlignHash:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+
+Layout/AlignParameters:
   Enabled: false
 
-Layout/ExtraSpacing:
-  Enabled: false
-
-Layout/IndentHash:
-  Enabled: false
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*'
 
 Layout/IndentArray:
   EnforcedStyle: consistent
 
+Layout/CaseIndentation:
+  Enabled: false
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EndAlignment:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
 Layout/MultilineMethodCallIndentation:
-  Enabled: false
-
-Layout/SpaceBeforeBlockBraces:
-  Enabled: false
-
-Layout/SpaceBeforeFirstArg:
-  Enabled: false
-
-Lint/AmbiguousBlockAssociation:
-  Enabled: false
+  EnforcedStyle: indented
 
 Metrics/AbcSize:
-  Enabled: false
+  Max: 18
 
 Metrics/BlockLength:
   Enabled: false
 
 Metrics/ClassLength:
-  Enabled: false
+  Max: 150
 
 Metrics/CyclomaticComplexity:
-  Enabled: false
+  Max: 7
 
 Metrics/LineLength:
-  Enabled: false
+  IgnoredPatterns: ['(\A|\s)#']
+  Max: 100
 
 Metrics/MethodLength:
-  Enabled: false
-
-Metrics/ModuleLength:
-  Enabled: false
+  Max: 12
 
 Metrics/ParameterLists:
   Enabled: false
 
 Metrics/PerceivedComplexity:
-  Enabled: false
-
-Style/Alias:
-  Enabled: false
+  Max: 8
 
 Style/AndOr:
   EnforcedStyle: conditionals
 
+Style/BlockDelimiters:
+  Enabled: false
+
 Style/BracesAroundHashParameters:
   Enabled: false
 
-Style/ClassVars:
-  Enabled: false
-
-Style/CommentAnnotation:
+Style/ClassAndModuleChildren:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-Style/FormatString:
-  Enabled: false
-
 Style/FrozenStringLiteralComment:
-  Enabled: false
-
-Style/GuardClause:
-  Enabled: false
-
-Style/Lambda:
   Enabled: false
 
 Style/NumericPredicate:
   Enabled: false
 
-Style/PercentLiteralDelimiters:
-  Enabled: false
-
-# Allow use of both single and double quotes for strings.
 Style/StringLiterals:
   Enabled: false
 
@@ -120,4 +107,19 @@ Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
 
 Style/WordArray:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/Date:
+  Enabled: false
+
+Rails/Delegate:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/TimeZone:
   Enabled: false
