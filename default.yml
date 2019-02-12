@@ -24,8 +24,8 @@ Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
 
-Layout/IndentArray:
-  EnforcedStyle: consistent
+Layout/DotPosition:
+  EnforcedStyle: trailing
 
 Layout/CaseIndentation:
   Enabled: false
@@ -35,6 +35,9 @@ Layout/ElseAlignment:
 
 Layout/EndAlignment:
   Enabled: false
+
+Layout/IndentArray:
+  EnforcedStyle: consistent
 
 Layout/IndentationWidth:
   Enabled: false
