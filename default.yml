@@ -39,9 +39,6 @@ Layout/EndAlignment:
 Layout/IndentArray:
   EnforcedStyle: consistent
 
-Layout/IndentationWidth:
-  Enabled: false
-
 Layout/IndentHash:
   EnforcedStyle: consistent
 
