@@ -126,3 +126,6 @@ Rails/SkipsModelValidations:
 
 Rails/TimeZone:
   Enabled: false
+
+require: rubocop-rspec
+
