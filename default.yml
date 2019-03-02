@@ -1,6 +1,8 @@
 # See documentation for details on definitions:
 # https://rubocop.readthedocs.io
 
+require: rubocop-rspec
+
 inherit_mode:
   merge:
     - AllowedNames
@@ -136,4 +138,20 @@ Rails/SkipsModelValidations:
 Rails/TimeZone:
   Enabled: false
 
-require: rubocop-rspec
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageChain:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 4
