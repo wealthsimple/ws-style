@@ -1,6 +1,11 @@
 # See documentation for details on definitions:
 # https://rubocop.readthedocs.io
 
+inherit_mode:
+  merge:
+    - AllowedNames
+    - Exclude
+
 AllCops:
   Exclude:
     - 'bin/**/*'
@@ -73,6 +78,10 @@ Metrics/ParameterLists:
 Metrics/PerceivedComplexity:
   Max: 8
 
+Naming/UncommunicativeMethodParamName:
+  AllowedNames:
+    - ex
+
 Style/AndOr:
   EnforcedStyle: conditionals
 
@@ -128,4 +137,3 @@ Rails/TimeZone:
   Enabled: false
 
 require: rubocop-rspec
-
