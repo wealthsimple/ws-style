@@ -141,6 +141,9 @@ Rails/TimeZone:
 RSpec/AnyInstance:
   Enabled: false
 
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
 RSpec/ExampleLength:
   Max: 15
 
