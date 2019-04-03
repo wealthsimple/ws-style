@@ -2,7 +2,7 @@
 
 Shared [rubocop](https://github.com/bbatsov/rubocop) config to enforce Ruby style consistently across Wealthsimple libraries and services.
 
-# Upgrading to 1.x
+# Upgrading to 3.x
 
 1.x adds a number of Cops to our default.yml. See the relevant Quip for more information on how to upgrade.
 
