@@ -1,6 +1,7 @@
 # See documentation for details on definitions:
 # https://rubocop.readthedocs.io
 
+require: rubocop-performance
 require: rubocop-rspec
 
 inherit_mode:
@@ -79,10 +80,6 @@ Metrics/ParameterLists:
 
 Metrics/PerceivedComplexity:
   Max: 8
-
-Naming/UncommunicativeMethodParamName:
-  AllowedNames:
-    - ex
 
 Style/AndOr:
   EnforcedStyle: conditionals
