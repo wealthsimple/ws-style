@@ -4,6 +4,7 @@
 require:
   - rubocop-performance
   - rubocop-rspec
+  - rubocop-vendor
 
 inherit_mode:
   merge:
