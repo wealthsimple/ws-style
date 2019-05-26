@@ -30,6 +30,9 @@ Layout/AlignHash:
 Layout/AlignParameters:
   Enabled: false
 
+Layout/AlignArguments:
+  Enabled: false
+
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - 'spec/**/*'
