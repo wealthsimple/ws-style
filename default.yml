@@ -53,7 +53,8 @@ Layout/IndentFirstArrayElement:
   EnforcedStyle: consistent
 
 Layout/IndentationWidth:
-  Enabled: false
+  Enabled: true
+  Width: 2
 
 Layout/IndentFirstHashElement:
   EnforcedStyle: consistent
