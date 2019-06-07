@@ -4,6 +4,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 5.1.0 - 2019-06-06
+### Changed
+- Added indentation cop, enforcing 2 space indentation.
+
+  This allows Rubocop to automatically format code like this:
+  
+  ```ruby
+  class Wizard
+  def cast_spell
+    # ...
+  end
+  end
+  ```
+  
+  into this:
+  
+  ```ruby
+  class Wizard
+    def cast_spell
+      # ...
+    end
+  end
+  ```
+
+## 5.0.0 - 2019-05-30
+### Changed
+- Enforce updating timestamps when changing Rails models.
+
 ## 4.1.0 - 2019-04-29
 ### Fixed
 - Address errors from installing latest rubocop.
