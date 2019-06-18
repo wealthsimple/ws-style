@@ -129,9 +129,6 @@ Style/WordArray:
 Rails:
   Enabled: true
 
-Rails/Date:
-  Enabled: false
-
 Rails/Delegate:
   Enabled: false
 
