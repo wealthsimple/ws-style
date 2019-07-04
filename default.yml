@@ -139,6 +139,9 @@ Rails/TimeZone:
 RSpec/AnyInstance:
   Enabled: false
 
+RSpec/ContextWording:
+  Enabled: false
+
 RSpec/EmptyExampleGroup:
   Enabled: false
 
@@ -154,5 +157,8 @@ RSpec/MessageChain:
 RSpec/MultipleExpectations:
   Enabled: false
 
+RSpec/NamedSubject:
+  Enabled: false
+
 RSpec/NestedGroups:
-  Max: 4
+  Max: 6
