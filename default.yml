@@ -14,16 +14,16 @@ inherit_mode:
 
 AllCops:
   Exclude:
-    - 'bin/**/*'
-    - 'data/**/*'
-    - 'db/**/*'
-    - 'gemfiles/**/*'
-    - 'lib/tasks/circle_0.rake'
-    - 'log/**/*'
-    - 'node_modules/**/*'
-    - 'public/**/*'
-    - 'tmp/**/*'
-    - 'vendor/**/*'
+    - "bin/**/*"
+    - "data/**/*"
+    - "db/**/*"
+    - "gemfiles/**/*"
+    - "lib/tasks/circle_0.rake"
+    - "log/**/*"
+    - "node_modules/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
 
 Layout/AlignHash:
   EnforcedLastArgumentHashStyle: ignore_implicit
@@ -36,7 +36,7 @@ Layout/AlignArguments:
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - 'spec/**/*'
+    - "spec/**/*"
 
 Layout/DotPosition:
   EnforcedStyle: trailing
@@ -76,10 +76,11 @@ Metrics/CyclomaticComplexity:
   Max: 7
 
 Metrics/LineLength:
-  IgnoredPatterns: ['(\A|\s)#']
+  IgnoredPatterns: ["(\A|\s)#"]
   Max: 100
 
 Metrics/MethodLength:
+  ExcludedMethods: ["extended"]
   Max: 15
 
 Metrics/ParameterLists:
