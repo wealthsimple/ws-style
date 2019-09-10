@@ -76,7 +76,7 @@ Metrics/CyclomaticComplexity:
   Max: 7
 
 Metrics/LineLength:
-  IgnoredPatterns: ["(\A|\s)#"]
+  IgnoredPatterns: ['(\A|\s)#']
   Max: 100
 
 Metrics/MethodLength:
