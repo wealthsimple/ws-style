@@ -130,6 +130,9 @@ Style/TrailingCommaInHashLiteral:
 Style/WordArray:
   Enabled: false
 
+Style/NegatedIf:
+  Enabled: false
+
 Rails:
   Enabled: true
 
