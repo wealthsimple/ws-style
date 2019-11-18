@@ -16,7 +16,8 @@ AllCops:
   Exclude:
     - "bin/**/*"
     - "data/**/*"
-    - "db/**/*"
+    - "db/migrate/**/*"
+    - "db/schema.rb"
     - "gemfiles/**/*"
     - "lib/tasks/circle_0.rake"
     - "log/**/*"
