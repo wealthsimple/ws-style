@@ -1,5 +1,5 @@
 module Ws
   module Style
-    VERSION = '5.2.4'.freeze
+    VERSION = '5.2.5'.freeze
   end
 end
