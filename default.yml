@@ -26,13 +26,13 @@ AllCops:
     - "tmp/**/*"
     - "vendor/**/*"
 
-Layout/AlignHash:
+Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   Enabled: false
 
 Lint/AmbiguousBlockAssociation:
@@ -51,14 +51,14 @@ Layout/ElseAlignment:
 Layout/EndAlignment:
   Enabled: false
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
 Layout/IndentationWidth:
   Enabled: true
   Width: 2
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
