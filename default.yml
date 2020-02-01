@@ -135,6 +135,9 @@ Rails:
 Rails/Delegate:
   Enabled: false
 
+Rails/FilePath:
+  EnforcedStyle: arguments
+
 Rails/TimeZone:
   Enabled: false
 
