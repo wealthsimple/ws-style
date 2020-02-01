@@ -58,6 +58,10 @@ Layout/IndentationWidth:
   Enabled: true
   Width: 2
 
+Layout/LineLength:
+  IgnoredPatterns: ['(\A|\s)#']
+  Max: 100
+
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
@@ -75,10 +79,6 @@ Metrics/ClassLength:
 
 Metrics/CyclomaticComplexity:
   Max: 7
-
-Metrics/LineLength:
-  IgnoredPatterns: ['(\A|\s)#']
-  Max: 100
 
 Metrics/MethodLength:
   ExcludedMethods: ["extended"]
