@@ -84,6 +84,10 @@ Metrics/MethodLength:
   ExcludedMethods: ["extended"]
   Max: 15
 
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/**/*"
+
 Metrics/ParameterLists:
   Enabled: false
 
