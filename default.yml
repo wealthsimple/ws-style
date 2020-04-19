@@ -168,3 +168,7 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+# https://docs.rubocop.org/en/latest/versioning/
+AllCops:
+  NewCops: enable
