@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 6.0.0 - 2020-04-27
+### Changed
+- Upgraded rubocop to >= 0.82 and opted into the 7 new cops.
+- Going forward we will need to explicitly opt into or out of every new cop.
+
 ## 5.1.0 - 2019-06-06
 ### Changed
 - Added indentation cop, enforcing 2 space indentation.
@@ -27,10 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     end
   end
   ```
-## 6.0.0 - 2020-04-27
-### Changed
-- Upgraded rubocop to >= 0.82 and opted into the 7 new cops.
-- Going forward we will need to explicitly opt into or out of every new cop.
 
 ## 5.0.0 - 2019-05-30
 ### Changed
