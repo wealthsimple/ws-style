@@ -168,3 +168,30 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+# Cops added in Rubocop 0.80 or later need to be enabled one-by-one below.
+# For more information: https://docs.rubocop.org/en/latest/versioning/
+
+# 0.80
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+# 0.81
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+# 0.82
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
