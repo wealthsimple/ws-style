@@ -202,3 +202,28 @@ Layout/SpaceAroundMethodCallOperator:
 
 Style/ExponentialNotation:
   Enabled: true
+
+# 0.83
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: True
+
+Style/SlicingWithRange:
+  Enabled: True
+
+# 0.84
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: True
+
+# 0.85
+Lint/MixedRegexpCaptureTypes:
+  Enabled: True
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: True
+
+Style/RedundantRegexpEscape:
+  Enabled: True
+
+# 0.86
+Style/RedundantFetchBlock:
+  Enabled: True
