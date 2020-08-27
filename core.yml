@@ -1,0 +1,314 @@
+# See documentation for details on definitions:
+# https://rubocop.readthedocs.io
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-vendor
+
+inherit_mode:
+  merge:
+    - AllowedNames
+    - Exclude
+
+AllCops:
+  Exclude:
+    - "bin/**/*"
+    - "data/**/*"
+    - "db/data/**/*"
+    - "db/migrate/**/*"
+    - "db/schema.rb"
+    - "gemfiles/**/*"
+    - "lib/tasks/circle_0.rake"
+    - "log/**/*"
+    - "node_modules/**/*"
+    - "public/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+
+Layout/HashAlignment:
+  EnforcedLastArgumentHashStyle: ignore_implicit
+
+Layout/ParameterAlignment:
+  Enabled: false
+
+Layout/ArgumentAlignment:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - "spec/**/*"
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/CaseIndentation:
+  Enabled: false
+
+Layout/ElseAlignment:
+  Enabled: false
+
+Layout/EndAlignment:
+  Enabled: false
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/IndentationWidth:
+  Enabled: true
+  Width: 2
+
+Layout/LineLength:
+  IgnoredPatterns: ['(\A|\s)#']
+  Max: 100
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Metrics/AbcSize:
+  Max: 18
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/MethodLength:
+  ExcludedMethods: ["extended"]
+  Max: 15
+
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/WordArray:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MessageChain:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NamedSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 6
+
+# Cops added in Rubocop 0.80 or later need to be enabled one-by-one below.
+# For more information: https://docs.rubocop.org/en/latest/versioning/
+
+# 0.80
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+# 0.81
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+# 0.82
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+# 0.83
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: True
+
+Style/SlicingWithRange:
+  Enabled: True
+
+# 0.84
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: True
+
+# 0.85
+Lint/MixedRegexpCaptureTypes:
+  Enabled: True
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: True
+
+Style/RedundantRegexpEscape:
+  Enabled: True
+
+# 0.86
+Style/RedundantFetchBlock:
+  Enabled: True
+
+# 0.87
+Style/AccessorGrouping:
+  Enabled: True
+
+Style/BisectedAttrAccessor:
+  Enabled: True
+
+Style/RedundantAssignment:
+  Enabled: True
+
+# 0.88
+Lint/DuplicateElsifCondition:
+  Enabled: True
+
+Style/ArrayCoercion:
+  Enabled: True
+
+Style/CaseLikeIf:
+  Enabled: True
+
+Style/HashAsLastArrayItem:
+  Enabled: True
+
+Style/HashLikeCase:
+  Enabled: True
+
+Style/RedundantFileExtensionInRequire:
+  Enabled: True
+
+# 0.89
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: True
+
+Lint/DuplicateRescueException:
+  Enabled: True
+
+Lint/EmptyConditionalBody:
+  Enabled: True
+
+Lint/FloatComparison:
+  Enabled: True
+
+Lint/MissingSuper:
+  Enabled: True
+
+Lint/OutOfRangeRegexpRef:
+  Enabled: True
+
+Lint/SelfAssignment:
+  Enabled: True
+
+Lint/TopLevelReturnWithArgument:
+  Enabled: True
+
+Lint/UnreachableLoop:
+  Enabled: True
+
+Style/ExplicitBlockArgument:
+  Enabled: True
+
+Style/GlobalStdStream:
+  Enabled: True
+
+Style/OptionalBooleanParameter:
+  Enabled: True
+
+Style/SingleArgumentDig:
+  Enabled: True
+
+Style/StringConcatenation:
+  Enabled: True
+
+# rubocop-performance 1.7
+Performance/AncestorsInclude:
+  Enabled: True
+
+Performance/BigDecimalWithNumericArgument:
+  Enabled: True
+
+Performance/RedundantSortBlock:
+  Enabled: True
+
+Performance/RedundantStringChars:
+  Enabled: True
+
+Performance/ReverseFirst:
+  Enabled: True
+
+Performance/SortReverse:
+  Enabled: True
+
+Performance/Squeeze:
+  Enabled: True
+
+Performance/StringInclude:
+  Enabled: True
