@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 6.1.0 - 2020-08-27
+- Upgraded rubocop to 0.89
+- Upgraded rubocop-performance to 1.7
+- Upgraded rubocop-rails to 2.7
+- Split out Rails cops into their own configuration to improve installation for non-Rails projects
+
 ## 6.0.4 - 2020-07-06
 ### Changed
 - Upgraded rubocop to >= 0.86 and opted into the new cops.
