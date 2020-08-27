@@ -59,6 +59,14 @@ Style/HashSyntax:
   EnforcedStyle: hash_rockets
 ```
 
+If you're using `ws-style` in a non-Rails project, inherit from the core configuration file instead:
+
+```yaml
+inherit_gem:
+  ws-style:
+    - core.yml
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
