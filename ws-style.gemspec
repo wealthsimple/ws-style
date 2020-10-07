@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.required_ruby_version = '>= 2.5.7'
 
-  s.add_dependency 'rubocop', '>= 0.90.0'
+  s.add_dependency 'rubocop', '>= 0.92.0'
   s.add_dependency 'rubocop-performance', '>= 1.8.1'
   s.add_dependency 'rubocop-rails', '>= 2.8.1'
   s.add_dependency 'rubocop-rspec', '>= 1.43.2'
@@ -32,5 +32,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler-audit'
   s.add_development_dependency 'git'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rspec', '~> 3.9.0'
 end
