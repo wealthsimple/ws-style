@@ -45,8 +45,17 @@ Rails/RenderPlainText:
   Enabled: True
 
 Rails/ShortI18n:
-  Enabled: True
+  Enabled: False
 
 Rails/WhereExists:
   Enabled: True
 
+# rubocop-rails 2.8
+Rails/AfterCommitOverride:
+  Enabled: True
+
+Rails/SquishedSQLHeredocs:
+  Enabled: False
+
+Rails/WhereNot:
+  Enabled: True
