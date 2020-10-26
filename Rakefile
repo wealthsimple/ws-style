@@ -11,7 +11,8 @@ task default: :spec
 
 desc 'Print out comments that can be used for a GitHub cop election'
 task :election do # rubocop:disable Rails/RakeEnvironment
-  RuboCop::ConfigLoader.default_configuration.pending_cops.each do |pending_cop|
+  configuration_path = File.expand_path('default.yml', File.dirname(__FILE__))
+  RuboCop::ConfigLoader.load_file(configuration_path).pending_cops.each do |pending_cop|
     base_urls = {
       'layout' => 'https://docs.rubocop.org/rubocop/cops_layout.html#layout',
       'lint' => 'https://docs.rubocop.org/rubocop/cops_lint.html#lint',
