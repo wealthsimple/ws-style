@@ -48,6 +48,9 @@ Layout/CaseIndentation:
 Layout/ElseAlignment:
   Enabled: false
 
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+
 Layout/EndAlignment:
   Enabled: false
 
