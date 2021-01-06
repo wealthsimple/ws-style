@@ -1,0 +1,12 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ws-style
+  description: Ruby style for services & libraries (using Rubocop)
+  tags:
+    - ruby
+    - open-source
+spec:
+  type: library
+  lifecycle: production
