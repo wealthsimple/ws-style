@@ -25,6 +25,7 @@ AllCops:
     - "public/**/*"
     - "tmp/**/*"
     - "vendor/**/*"
+  SuggestExtensions: false
 
 Layout/HashAlignment:
   EnforcedLastArgumentHashStyle: ignore_implicit
