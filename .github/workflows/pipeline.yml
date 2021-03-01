@@ -25,3 +25,5 @@ jobs:
           git config user.name "Wolfbot"
           git config user.email "noreply@wealthsimple.com"
           bundle exec rake release
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
