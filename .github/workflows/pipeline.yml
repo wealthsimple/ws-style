@@ -21,4 +21,7 @@ jobs:
         run: bundle exec rspec
       - name: Release the gem
         if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
-        run: bundle exec rake release
+        run: |
+          git config user.name "Wolfbot"
+          git config user.email "noreply@wealthsimple.com"
+          bundle exec rake release
