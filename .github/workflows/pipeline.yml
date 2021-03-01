@@ -21,7 +21,7 @@ jobs:
         run: bundle exec rspec
       - name: Release the gem
         if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
-        run: 
+        run: |
           mkdir -p ~/.gem
           cat << EOF > ~/.gem/credentials
           ---
