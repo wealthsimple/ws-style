@@ -21,12 +21,14 @@ jobs:
         run: bundle exec rspec
       - name: Release the gem
         if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
-        run: |
-          git config user.name "Wolfbot"
-          git config user.email "noreply@wealthsimple.com"
+        run: 
+          mkdir -p ~/.gem
+          cat << EOF > ~/.gem/credentials
+          ---
+          :github: Bearer ${GITHUB_TOKEN}
+          :rubygems_api_key: ${RUBYGEMS_API_KEY}
+          EOF
+          chmod 0600 ~/.gem/credentials
           bundle exec rake release
         env:
-          EMAIL: ${{ secrets.RUBYGEMS_EMAIL }}
-          GIT_AUTHOR_NAME: Wealthsimple
-          GIT_COMMITTER_NAME: Wealthsimple
           RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
