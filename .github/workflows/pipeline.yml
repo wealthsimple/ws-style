@@ -28,8 +28,3 @@ jobs:
           bundler-cache: true
       - name: Run rspec
         run: bundle exec rspec
-      - name: SonarQube Scan
-        uses: kitabisa/sonarqube-action@master
-        with:
-          host: ${{ secrets.SONAR_HOST_URL }}
-          login: ${{ secrets.SONAR_LOGIN_TOKEN }}
