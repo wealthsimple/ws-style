@@ -26,5 +26,5 @@ jobs:
           git config user.email "noreply@wealthsimple.com"
           bundle exec rake release
         env:
-          RUBYGEMS_EMAIL: ${{ secrets.RUBYGEMS_EMAIL }}
+          EMAIL: ${{ secrets.RUBYGEMS_EMAIL }}
           RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
