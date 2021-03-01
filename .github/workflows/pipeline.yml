@@ -3,8 +3,8 @@ name: Pipeline
 on:
   - push
 jobs:
-  lint:
-    name: Lint
+  build:
+    name: Build
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
@@ -17,14 +17,8 @@ jobs:
       - uses: r7kamura/rubocop-problem-matchers-action@v1
       - name: Rubocop
         run: bundle exec rubocop
-  test:
-    name: Test
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.5.8
-          bundler-cache: true
       - name: Run rspec
         run: bundle exec rspec
+      - name: Release the gem
+        if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
+        run: bundle exec rake release
