@@ -347,3 +347,18 @@ Style/SoleNestedConditional:
 # rubocop-performance 1.7
 Performance/Sum:
   Enabled: True
+
+Lint/EmptyClass:
+  Enabled: False
+
+Lint/NumberedParameterAssignment:
+  Enabled: False
+
+Style/IfWithBooleanLiteralBranches:
+  Enabled: False
+
+Style/NilLambda:
+  Enabled: False
+
+Performance/RedundantEqualityComparisonBlock:
+  Enabled: False
