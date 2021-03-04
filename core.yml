@@ -348,6 +348,12 @@ Style/SoleNestedConditional:
 Performance/Sum:
   Enabled: True
 
+Lint/DuplicateBranch:
+  Enabled: False
+
+Lint/EmptyBlock:
+  Enabled: False
+
 Lint/EmptyClass:
   Enabled: False
 
