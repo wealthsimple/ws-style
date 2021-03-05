@@ -33,3 +33,25 @@ task :election do
     COMMENT
   end
 end
+
+desc 'Print out comments that can be used for a GitHub cop election'
+task "election:config" do
+  configuration_path = File.expand_path('default.yml', File.dirname(__FILE__))
+  configuration = RuboCop::ConfigLoader.load_file(configuration_path)
+  pending_cops = RuboCop::ConfigLoader.default_configuration.pending_cops.reject { |cop|
+    configuration.key?(cop.name)
+  }
+  ascending_by_version = pending_cops.group_by { |cop|
+    cop.metadata.fetch('VersionAdded')
+  }.sort_by(&:first)
+  ascending_by_version.each do |(version, cops)|
+    puts "# #{version}"
+    cops.each do |cop|
+      puts <<~CONFIGURATION
+        #{cop.name}:
+          Enabled: True
+
+      CONFIGURATION
+    end
+  end
+end
