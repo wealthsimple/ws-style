@@ -12,20 +12,46 @@ task default: :spec
 desc 'Print out comments that can be used for a GitHub cop election'
 task :election do
   configuration_path = File.expand_path('default.yml', File.dirname(__FILE__))
-  RuboCop::ConfigLoader.load_file(configuration_path).pending_cops.each do |pending_cop|
+  configuration = RuboCop::ConfigLoader.load_file(configuration_path)
+  RuboCop::ConfigLoader.default_configuration.pending_cops.each do |pending_cop|
     base_urls = {
       'layout' => 'https://docs.rubocop.org/rubocop/cops_layout.html#layout',
+      'gemspec' => 'https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspec',
       'lint' => 'https://docs.rubocop.org/rubocop/cops_lint.html#lint',
       'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
       'performance' => 'https://docs.rubocop.org/rubocop-performance/cops_performance.html#performance',
       'rails' => 'https://docs.rubocop.org/rubocop-rails/cops_rails.html#rails',
       'rspec' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec.html#rspec',
     }
+    next if configuration.key?(pending_cop.name)
+
     department, anchor = pending_cop.name.downcase.split('/')
     puts <<~COMMENT
       [**#{pending_cop.name}**](#{base_urls.fetch(department)}#{anchor})
       #{pending_cop.metadata.fetch('Description')}
 
     COMMENT
+  end
+end
+
+desc 'Print out comments that can be used for a GitHub cop election'
+task "election:config" do
+  configuration_path = File.expand_path('default.yml', File.dirname(__FILE__))
+  configuration = RuboCop::ConfigLoader.load_file(configuration_path)
+  pending_cops = RuboCop::ConfigLoader.default_configuration.pending_cops.reject { |cop|
+    configuration.key?(cop.name)
+  }
+  ascending_by_version = pending_cops.group_by { |cop|
+    cop.metadata.fetch('VersionAdded')
+  }.sort_by(&:first)
+  ascending_by_version.each do |(version, cops)|
+    puts "# #{version}"
+    cops.each do |cop|
+      puts <<~CONFIGURATION
+        #{cop.name}:
+          Enabled: True
+
+      CONFIGURATION
+    end
   end
 end

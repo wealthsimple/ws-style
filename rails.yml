@@ -59,3 +59,10 @@ Rails/SquishedSQLHeredocs:
 
 Rails/WhereNot:
   Enabled: True
+
+# rubocop-rails 2.9
+Rails/AttributeDefaultBlockValue:
+  Enabled: True
+
+Rails/WhereEquals:
+  Enabled: True
