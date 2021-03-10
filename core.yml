@@ -353,7 +353,7 @@ Lint/DuplicateRegexpCharacterClassElement:
   Enabled: True
 
 Lint/EmptyBlock:
-  Enabled: True
+  Enabled: False
 
 Lint/ToEnumArguments:
   Enabled: True
