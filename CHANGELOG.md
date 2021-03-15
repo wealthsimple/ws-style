@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## 6.7.2 - 2021-03-15
-- Increase Metrics/MethodLength to 50 (1/3 of class length).
+- Increase Metrics/MethodLength to 25 (1/6 of class length).
 
 ## 6.7.1 - 2021-03-09
 - Disable Lint/EmptyBlock
