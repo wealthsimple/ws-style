@@ -15,8 +15,10 @@ jobs:
           ruby-version: 2.5.8
           bundler-cache: true
       - uses: r7kamura/rubocop-problem-matchers-action@v1
-      - name: Rubocop
-        run: bundle exec rubocop
+      - uses: wealthsimple/toolbox-script@main
+        name: RuboCop
+        with:
+          script: toolbox.ruby.lint.run()
       - name: Run rspec
         run: bundle exec rspec
       - name: Release the gem
