@@ -12,7 +12,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.5.8
+          ruby-version: 2.7.2
           bundler-cache: true
       - uses: r7kamura/rubocop-problem-matchers-action@v1
       - uses: wealthsimple/toolbox-script@main
