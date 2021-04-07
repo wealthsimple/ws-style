@@ -463,3 +463,7 @@ Performance/RedundantEqualityComparisonBlock:
 
 Performance/RedundantSplitRegexpArgument:
   Enabled: True
+
+# rubocop 1.12.0
+Style/StringChars:
+  Enabled: True

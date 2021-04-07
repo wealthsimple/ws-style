@@ -22,11 +22,11 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.required_ruby_version = '>= 2.7.2'
 
-  s.add_dependency 'rubocop', '>= 1.11.0'
-  s.add_dependency 'rubocop-performance', '>= 1.10.1'
+  s.add_dependency 'rubocop', '>= 1.12.1'
+  s.add_dependency 'rubocop-performance', '>= 1.10.2'
   s.add_dependency 'rubocop-rails', '>= 2.9.1'
   s.add_dependency 'rubocop-rspec', '>= 2.2.0'
-  s.add_dependency 'rubocop-vendor', '>= 0.5.0'
+  s.add_dependency 'rubocop-vendor', '>= 0.6.0'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'bundler-audit'
