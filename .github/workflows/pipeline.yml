@@ -12,8 +12,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.2
           bundler-cache: true
+      - name: Fetch main branch
+        run: git fetch origin main
       - uses: r7kamura/rubocop-problem-matchers-action@v1
       - uses: wealthsimple/toolbox-script@main
         name: RuboCop
@@ -22,7 +23,7 @@ jobs:
       - name: Run rspec
         run: bundle exec rspec
       - name: Release the gem
-        if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
+        if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           mkdir -p ~/.gem
           cat << EOF > ~/.gem/credentials
