@@ -3,7 +3,7 @@ require 'keepachangelog'
 
 RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
   def get_version(git, branch = 'HEAD')
-    git.grep('STRING = ', 'lib/**/version.rb', object: branch).
+    git.grep('VERSION = ', 'lib/**/version.rb', object: branch).
       map { |_sha, matches| matches.first[1] }.
       map { |v| parse_version(v) }.
       compact.
@@ -11,7 +11,7 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
   end
 
   def parse_version(string)
-    string.match(/STRING = ['"](.*)['"]/)[1]
+    string.match(/VERSION = ['"](.*)['"]/)[1]
   end
 
   let(:git) { Git.open('.') }
