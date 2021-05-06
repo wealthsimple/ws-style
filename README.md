@@ -73,4 +73,4 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 To install this gem onto your local machine, run `bundle exec rake install`.
 
-New versions are automatically released by CI when merged to `master`.
+New versions are automatically released by CI when merged to `main`.
