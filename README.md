@@ -1,4 +1,5 @@
-# ws-style [![CircleCI](https://circleci.com/gh/wealthsimple/ws-style.svg?style=svg)](https://circleci.com/gh/wealthsimple/ws-style) [![Gem Version](https://badge.fury.io/rb/ws-style.svg)](https://rubygems.org/gems/ws-style)
+# ws-style
+[![Github Actions Badge](https://github.com/wealthsimple/ws-style/actions/workflows/pipeline.yml/badge.svg)](https://github.com/wealthsimple/ws-style/actions)
 
 Shared [rubocop](https://github.com/bbatsov/rubocop) config to enforce Ruby style consistently across Wealthsimple libraries and services.
 
