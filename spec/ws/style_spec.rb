@@ -5,8 +5,7 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
   def get_version(git, branch = 'HEAD')
     git.grep('VERSION = ', 'lib/**/version.rb', object: branch).
       map { |_sha, matches| matches.first[1] }.
-      map { |v| parse_version(v) }.
-      compact.
+      filter_map { |v| parse_version(v) }.
       first
   end
 
