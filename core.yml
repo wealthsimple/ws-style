@@ -467,3 +467,65 @@ Performance/RedundantSplitRegexpArgument:
 # rubocop 1.12.0
 Style/StringChars:
   Enabled: True
+
+# rubocop-performance 1.11
+Performance/MapCompact:
+  Enabled: True
+
+# rubocop 1.16
+Lint/EmptyInPattern:
+  Enabled: True
+
+Style/InPatternThen:
+  Enabled: True
+
+Style/MultilineInPatternThen:
+  Enabled: True
+
+Style/QuotedSymbols:
+  Enabled: True
+
+# rubocop 1.18
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: True
+
+# rubocop 1.19
+Lint/AmbiguousRange:
+  Enabled: True
+
+Style/RedundantSelfAssignmentBranch:
+  Enabled: True
+
+# rubocop 1.21
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: True
+
+Lint/IncompatibleIoSelectWithFiberScheduler:
+  Enabled: True
+
+# rubocop 1.22
+Lint/RequireRelativeSelfPath:
+  Enabled: True
+
+Security/IoMethods:
+  Enabled: True
+
+Style/NumberedParameters:
+  Enabled: True
+
+Style/NumberedParametersLimit:
+  Enabled: True
+
+Style/SelectByRegexp:
+  Enabled: True
+
+# rubocop-rspec 2.4
+RSpec/IdenticalEqualityAssertion:
+  Enabled: True
+
+# rubocop-rspec 2.5
+RSpec/ExcessiveDocstringSpacing:
+  Enabled: True
+
+RSpec/SubjectDeclaration:
+  Enabled: True
