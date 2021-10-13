@@ -15,13 +15,14 @@ task :election do
   configuration = RuboCop::ConfigLoader.load_file(configuration_path)
   RuboCop::ConfigLoader.default_configuration.pending_cops.each do |pending_cop|
     base_urls = {
-      'layout' => 'https://docs.rubocop.org/rubocop/cops_layout.html#layout',
       'gemspec' => 'https://docs.rubocop.org/rubocop/cops_gemspec.html#gemspec',
+      'layout' => 'https://docs.rubocop.org/rubocop/cops_layout.html#layout',
       'lint' => 'https://docs.rubocop.org/rubocop/cops_lint.html#lint',
-      'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
       'performance' => 'https://docs.rubocop.org/rubocop-performance/cops_performance.html#performance',
       'rails' => 'https://docs.rubocop.org/rubocop-rails/cops_rails.html#rails',
       'rspec' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec.html#rspec',
+      'security' => 'https://docs.rubocop.org/rubocop/cops_security.html#security',
+      'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
     }
     next if configuration.key?(pending_cop.name)
 

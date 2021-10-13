@@ -66,3 +66,31 @@ Rails/AttributeDefaultBlockValue:
 
 Rails/WhereEquals:
   Enabled: True
+
+# rubocop-rails 2.10
+Rails/TimeZoneAssignment:
+  Enabled: True
+
+# rubocop-rails 2.11
+Rails/AddColumnIndex:
+  Enabled: True
+
+Rails/EagerEvaluationLogMessage:
+  Enabled: True
+
+Rails/ExpandedDateRange:
+  Enabled: True
+
+Rails/I18nLocaleAssignment:
+  Enabled: True
+
+Rails/UnusedIgnoredColumns:
+  Enabled: True
+
+# rubocop-rails 2.12
+Rails/RedundantTravelBack:
+  Enabled: True
+
+# rubocop-rspec 2.4
+RSpec/Rails/AvoidSetupHook:
+  Enabled: True
