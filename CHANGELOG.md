@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Removed rules that conflict with auto-correcting line-length
 - Enable `Layout/ArgumentAlignment`
-- Enable `Layout/ParameterAlignment`
 - For `Layout/HashAlignment`, change `EnforcedLastArgumentHashStyle` to `always_inspect`
 
 ## 6.10.0 - 2021-10-13
