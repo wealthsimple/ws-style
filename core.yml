@@ -27,15 +27,6 @@ AllCops:
     - "vendor/**/*"
   SuggestExtensions: false
 
-Layout/HashAlignment:
-  EnforcedLastArgumentHashStyle: ignore_implicit
-
-Layout/ParameterAlignment:
-  Enabled: false
-
-Layout/ArgumentAlignment:
-  Enabled: false
-
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*"
