@@ -27,6 +27,9 @@ AllCops:
     - "vendor/**/*"
   SuggestExtensions: false
 
+Layout/ParameterAlignment:
+  Enabled: false
+
 Lint/AmbiguousBlockAssociation:
   Exclude:
     - "spec/**/*"
