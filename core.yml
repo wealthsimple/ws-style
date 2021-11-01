@@ -523,3 +523,7 @@ RSpec/ExcessiveDocstringSpacing:
 
 RSpec/SubjectDeclaration:
   Enabled: True
+
+# rubocop-performance 1.12
+Performance/ConcurrentMonotonicTime:
+  Enabled: True
