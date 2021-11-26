@@ -5,6 +5,7 @@ require:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-vendor
+  - ./lib/ws/style/recursive_open_struct_use.rb
 
 inherit_mode:
   merge:
