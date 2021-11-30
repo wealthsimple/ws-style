@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ws-style (6.11.2)
+    ws-style (6.11.3)
       rubocop (>= 1.12.1)
       rubocop-performance (>= 1.10.2)
       rubocop-rails (>= 2.9.1)
@@ -33,7 +33,7 @@ GEM
       thor (~> 0.20)
     minitest (5.14.4)
     parallel (1.21.0)
-    parser (3.0.2.0)
+    parser (3.0.3.1)
       ast (~> 2.4.1)
     rack (2.2.3)
     rainbow (3.0.0)
@@ -96,4 +96,4 @@ DEPENDENCIES
   ws-style!
 
 BUNDLED WITH
-   2.2.30
+   2.2.32
