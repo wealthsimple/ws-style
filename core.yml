@@ -35,7 +35,7 @@ Lint/AmbiguousBlockAssociation:
     - "spec/**/*"
 
 Layout/ArgumentAlignment:
-  Enabled: false
+  EnforcedStyle: with_fixed_indentation
 
 Layout/DotPosition:
   EnforcedStyle: trailing

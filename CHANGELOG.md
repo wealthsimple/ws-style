@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 6.11.3 - 2021-11-19
 ### Changed
-- Disable Layout/ArgumentAlignment
+- Layout/ArgumentAlignment uses with_fixed_indentation
 
 ## 6.11.2 - 2021-11-19
 ### Changed
