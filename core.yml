@@ -441,6 +441,10 @@ Style/IfWithBooleanLiteralBranches:
 Gemspec/DateAssignment:
   Enabled: True
 
+# rubocop 1.23
+Gemspec/RequireMFA
+  Enabled: False
+
 Style/HashConversion:
   Enabled: True
 
