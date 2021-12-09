@@ -442,7 +442,7 @@ Gemspec/DateAssignment:
   Enabled: True
 
 # rubocop 1.23
-Gemspec/RequireMFA
+Gemspec/RequireMFA:
   Enabled: False
 
 Style/HashConversion:
