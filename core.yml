@@ -534,3 +534,32 @@ RSpec/SubjectDeclaration:
 # rubocop-performance 1.12
 Performance/ConcurrentMonotonicTime:
   Enabled: True
+
+# rubocop-performance 1.13
+Performance/StringIdentifierArgument:
+  Enabled: True
+
+# rubocop 1.23
+Lint/UselessRuby2Keywords:
+  Enabled: True
+
+Style/OpenStructUse:
+  Enabled: True
+
+# rubocop 1.24
+Naming/BlockForwarding:
+  Enabled: True
+  EnforcedStyle: explicit
+
+Style/FileRead:
+  Enabled: True
+
+Style/FileWrite:
+  Enabled: True
+
+Style/MapToHash:
+  Enabled: True
+
+# rubocop-rspec 2.7
+RSpec/FactoryBot/SyntaxMethods:
+  Enabled: false

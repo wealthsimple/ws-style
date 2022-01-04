@@ -94,3 +94,16 @@ Rails/RedundantTravelBack:
 # rubocop-rspec 2.4
 RSpec/Rails/AvoidSetupHook:
   Enabled: True
+
+# rubocop-rails 2.13
+Rails/CompactBlank:
+  Enabled: True
+
+Rails/DurationArithmetic:
+  Enabled: True
+
+Rails/RedundantPresenceValidationOnBelongsTo:
+  Enabled: True
+
+Rails/RootJoinChain:
+  Enabled: True
