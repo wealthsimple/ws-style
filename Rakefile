@@ -23,6 +23,7 @@ task :election do
       'rspec' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec.html#rspec',
       'security' => 'https://docs.rubocop.org/rubocop/cops_security.html#security',
       'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
+      'naming' => 'https://docs.rubocop.org/rubocop/cops_naming.html#naming',
     }
     next if configuration.key?(pending_cop.name)
 
