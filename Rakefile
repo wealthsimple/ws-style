@@ -4,7 +4,6 @@ require "rubocop"
 require "rubocop-performance"
 require "rubocop-rails"
 require "rubocop-rspec"
-
 RSpec::Core::RakeTask.new(:spec)
 
 task default: :spec
@@ -21,14 +20,16 @@ task :election do
       'performance' => 'https://docs.rubocop.org/rubocop-performance/cops_performance.html#performance',
       'rails' => 'https://docs.rubocop.org/rubocop-rails/cops_rails.html#rails',
       'rspec' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec.html#rspec',
+      'rspec_factorybot' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec_factorybot.html#rspecfactorybot',
       'security' => 'https://docs.rubocop.org/rubocop/cops_security.html#security',
       'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
+      'naming' => 'https://docs.rubocop.org/rubocop/cops_naming.html#naming',
     }
     next if configuration.key?(pending_cop.name)
 
-    department, anchor = pending_cop.name.downcase.split('/')
+    *department, anchor = pending_cop.name.downcase.split('/')
     puts <<~COMMENT
-      [**#{pending_cop.name}**](#{base_urls.fetch(department)}#{anchor})
+      [**#{pending_cop.name}**](#{base_urls.fetch(department.join('_'))}#{anchor})
       #{pending_cop.metadata.fetch('Description')}
 
     COMMENT
