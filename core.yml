@@ -560,6 +560,9 @@ Style/FileWrite:
 Style/MapToHash:
   Enabled: True
 
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+
 # rubocop-rspec 2.7
 RSpec/FactoryBot/SyntaxMethods:
   Enabled: false
