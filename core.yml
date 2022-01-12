@@ -565,4 +565,4 @@ Style/HashSyntax:
 
 # rubocop-rspec 2.7
 RSpec/FactoryBot/SyntaxMethods:
-  Enabled: false
+  Enabled: False

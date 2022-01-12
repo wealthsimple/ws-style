@@ -103,7 +103,7 @@ Rails/DurationArithmetic:
   Enabled: True
 
 Rails/RedundantPresenceValidationOnBelongsTo:
-  Enabled: True
+  Enabled: False
 
 Rails/RootJoinChain:
   Enabled: True
