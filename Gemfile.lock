@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ws-style (6.13.4)
+    ws-style (6.13.5)
       rubocop (>= 1.23)
       rubocop-performance (>= 1.10.2)
       rubocop-rails (>= 2.9.1)
@@ -53,9 +53,9 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.3)
-    rubocop (1.24.1)
+    rubocop (1.25.0)
       parallel (~> 1.10)
-      parser (>= 3.0.0.0)
+      parser (>= 3.1.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
@@ -71,7 +71,7 @@ GEM
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    rubocop-rspec (2.7.0)
+    rubocop-rspec (2.8.0)
       rubocop (~> 1.19)
     rubocop-vendor (0.8.0)
       rubocop (>= 0.53.0)
