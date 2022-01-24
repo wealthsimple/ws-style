@@ -4,23 +4,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 6.13.4 - 2021-01-17
+## 6.13.5 - 2022-01-24
+### Changed
+- Updated dependencies
+- Bumped Ruby to 2.7.5
+
+## 6.13.4 - 2022-01-17
 ### Changed
 - Updated dependencies
 
-## 6.13.3 - 2021-01-10
+## 6.13.3 - 2022-01-10
 ### Changed
 - Disable Rails/RedundantPresenceValidationOnBelongsTo as it can generate unsafe autocorrections
 
-## 6.13.2 - 2021-01-10
+## 6.13.2 - 2022-01-10
 ### Changed
 - Update rubocop-rails to 2.13.1
 
-## 6.13.1 - 2021-01-07
+## 6.13.1 - 2022-01-07
 ### Changed
 - Disable ruby 3.1 Hash shorthand syntax
 
-## 6.13.0 - 2021-01-04
+## 6.13.0 - 2022-01-04
 ### Changed
 - Updated rubocop to 1.24.1 and opted into new cops
 
