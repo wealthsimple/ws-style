@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ws-style (6.13.6)
+    ws-style (6.13.7)
       rubocop (>= 1.23)
       rubocop-performance (>= 1.10.2)
       rubocop-rails (>= 2.9.1)
