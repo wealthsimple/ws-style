@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ws-style (6.13.10)
+    ws-style (6.13.11)
       rubocop (>= 1.23)
       rubocop-performance (>= 1.10.2)
       rubocop-rails (>= 2.9.1)
@@ -11,7 +11,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.2.2)
+    activesupport (7.0.2.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -64,14 +64,14 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.16.0)
       parser (>= 3.1.1.0)
-    rubocop-performance (1.13.2)
+    rubocop-performance (1.13.3)
       rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     rubocop-rails (2.13.2)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
       rubocop (>= 1.7.0, < 2.0)
-    rubocop-rspec (2.8.0)
+    rubocop-rspec (2.9.0)
       rubocop (~> 1.19)
     rubocop-vendor (0.8.3)
       rubocop (>= 0.53.0)
