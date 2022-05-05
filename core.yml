@@ -60,7 +60,7 @@ Layout/IndentationWidth:
   Width: 2
 
 Layout/LineLength:
-  IgnoredPatterns: ['(\A|\s)#']
+  AllowedPatterns: ['(\A|\s)#']
   Max: 100
 
 Layout/FirstHashElementIndentation:
