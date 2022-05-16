@@ -24,7 +24,10 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
         'origin/master'
       else
         raise StandardError,
-          "Couldn't determine main branch.  Does 'origin/main' or 'origin/master' need to be fetched?"
+          <<~ERROR
+            Couldn't determine main branch.
+            Does 'origin/main' or 'origin/master' need to be fetched?
+          ERROR
       end
   end
 
@@ -62,9 +65,7 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
     is_main_branch = git.current_branch == main_branch
     skip('already on main branch, no need to compare versions') if is_main_branch
 
-    unless needs_version_bump?
-      skip('Diff only contains lockfile or GitHub Actions workflows updates, no need to bump version')
-    end
+    skip('Diff only contains non-code changes, no need to bump version') unless needs_version_bump?
 
     expect(Gem::Version.new(head_version)).to be > Gem::Version.new(main_version)
   end
