@@ -437,8 +437,8 @@ Lint/TripleQuotes:
 Style/IfWithBooleanLiteralBranches:
   Enabled: False
 
-# rubocop 1.10
-Gemspec/DateAssignment:
+# rubocop 1.30
+Gemspec/DeprecatedAttributeAssignment:
   Enabled: True
 
 # rubocop 1.23
