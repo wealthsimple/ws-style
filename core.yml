@@ -86,7 +86,7 @@ Metrics/CyclomaticComplexity:
   Max: 7
 
 Metrics/MethodLength:
-  IgnoredMethods: ["extended"]
+  AllowedMethods: ["extended"]
   Max: 25
 
 Metrics/ModuleLength:
