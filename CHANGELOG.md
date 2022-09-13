@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 6.14.0 - 2022-09-6
 ### Changed
-- Support new rules introduced between rubocop 1.26 -> 1.3.6
+- Support new rules introduced between rubocop 1.26 -> 1.36
 
 ## 6.13.25 - 2022-07-13
 ### Changed
