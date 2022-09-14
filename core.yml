@@ -13,8 +13,6 @@ inherit_mode:
 
 AllCops:
   NewCops: disable
-
-AllCops:
   Exclude:
     - "bin/**/*"
     - "data/**/*"
