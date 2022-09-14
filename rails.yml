@@ -107,3 +107,63 @@ Rails/RedundantPresenceValidationOnBelongsTo:
 
 Rails/RootJoinChain:
   Enabled: True
+
+# rubocop-rails 2.14
+Rails/ActionControllerTestCase:
+  Enabled: False
+
+Rails/DeprecatedActiveModelErrorsMethods:
+  Enabled: True
+
+Rails/DuplicateAssociation:
+  Enabled: True
+
+Rails/DuplicateScope:
+  Enabled: True
+
+Rails/I18nLazyLookup:
+  Enabled: True
+
+Rails/I18nLocaleTexts:
+  Enabled: False
+
+Rails/MigrationClassName:
+  Enabled: True
+
+Rails/TransactionExitStatement:
+  Enabled: True
+
+# rubocop-rails 2.15
+Rails/DotSeparatedKeys:
+  Enabled: True
+
+Rails/RootPublicPath:
+  Enabled: True
+
+Rails/StripHeredoc:
+  Enabled: True
+
+Rails/ToFormattedS:
+  Enabled: True
+
+# rubocop-rails 2.16
+Rails/ActionControllerFlashBeforeRender:
+  Enabled: True
+
+Rails/ActiveSupportOnLoad:
+  Enabled: True
+
+Rails/FreezeTime:
+  Enabled: True
+
+Rails/RootPathnameMethods:
+  Enabled: True
+
+Rails/ToSWithArgument:
+  Enabled: True
+
+Rails/TopLevelHashWithIndifferentAccess:
+  Enabled: True
+
+Rails/WhereMissing:
+  Enabled: True

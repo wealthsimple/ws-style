@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    ws-style (6.13.25)
-      rubocop (>= 1.30)
+    ws-style (6.14.0)
+      rubocop (>= 1.36)
       rubocop-performance (>= 1.10.2)
       rubocop-rails (>= 2.9.1)
       rubocop-rspec (>= 2.2.0)
@@ -99,4 +99,4 @@ DEPENDENCIES
   ws-style!
 
 BUNDLED WITH
-   2.3.16
+   2.3.21

@@ -12,6 +12,9 @@ inherit_mode:
     - Exclude
 
 AllCops:
+  NewCops: disable
+
+AllCops:
   Exclude:
     - "bin/**/*"
     - "data/**/*"
@@ -86,7 +89,7 @@ Metrics/CyclomaticComplexity:
   Max: 7
 
 Metrics/MethodLength:
-  IgnoredMethods: ["extended"]
+  AllowedMethods: ["extended"]
   Max: 25
 
 Metrics/ModuleLength:
@@ -570,3 +573,78 @@ Style/HashSyntax:
 # rubocop-rspec 2.7
 RSpec/FactoryBot/SyntaxMethods:
   Enabled: False
+
+# rubocop 1.26
+Style/NestedFileDirname:
+  Enabled: True
+
+# rubocop 1.27
+Lint/RefinementImportMethods:
+  Enabled: True
+
+Style/RedundantInitialize:
+  Enabled: True
+
+# rubocop 1.28
+Security/CompoundHash:
+  Enabled: True
+
+Style/FetchEnvVar:
+  Enabled: True
+
+Style/ObjectThen:
+  Enabled: True
+
+# rubocop 1.29
+Style/EnvHome:
+  Enabled: True
+
+# rubocop 1.30
+Style/MapCompactWithConditionalBlock:
+  Enabled: True
+
+# rubocop 1.31
+Layout/LineContinuationLeadingSpace:
+  Enabled: True
+
+Layout/LineContinuationSpacing:
+  Enabled: True
+
+Lint/ConstantOverwrittenInRescue:
+  Enabled: True
+
+Lint/NonAtomicFileOperation:
+  Enabled: True
+
+# rubocop 1.32
+Lint/RequireRangeParentheses:
+  Enabled: True
+
+Style/EmptyHeredoc:
+  Enabled: True
+
+# rubocop 1.35
+Style/MagicCommentFormat:
+  Enabled: True
+
+# rubocop-rspec 2.10.0
+RSpec/VerifiedDoubleReference:
+  Enabled: True
+
+# rubocop-rspec 2.11.0
+RSpec/ChangeByZero:
+  Enabled: True
+
+# rubocop-rspec 2.12
+RSpec/Capybara/SpecificMatcher:
+  Enabled: False
+
+RSpec/Rails/HaveHttpStatus:
+  Enabled: True
+
+# rubocop-rspec 2.9.0
+RSpec/BeEq:
+  Enabled: True
+
+RSpec/BeNil:
+  Enabled: True
