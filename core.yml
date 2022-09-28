@@ -5,6 +5,7 @@ require:
   - rubocop-performance
   - rubocop-rspec
   - rubocop-vendor
+  - ./lib/rubocop/cop/custom/active_record_base_transaction_use.rb
 
 inherit_mode:
   merge:
