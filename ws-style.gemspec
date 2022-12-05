@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 2.7.2'
 
   s.add_dependency 'rubocop', '>= 1.36'
+  s.add_dependency 'rubocop-graphql', '>= 0.18.0'
   s.add_dependency 'rubocop-performance', '>= 1.10.2'
   s.add_dependency 'rubocop-rails', '>= 2.9.1'
   s.add_dependency 'rubocop-rspec', '>= 2.2.0'
