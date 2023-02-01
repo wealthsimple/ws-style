@@ -94,7 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  bundler-audit
+  bundler-audit (~> 0.9.1)
   git
   keepachangelog
   rake
