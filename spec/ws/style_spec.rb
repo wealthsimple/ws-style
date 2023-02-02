@@ -77,7 +77,6 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
   it 'has changelog entry for current version' do
     parser = ParseAChangelog.parse('CHANGELOG.md')
     versions = parser.elements[2].elements.map { |element| element.elements[1].text_value }
-    first_version = versions[0]
-    expect(first_version).to include(head_version)
+    expect(versions.first).to include(head_version)
   end
 end
