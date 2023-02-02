@@ -1,8 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+## 6.14.4 - 2023-01-31
+### Changed
+- Upgraded to ruby 3
 
 ## 6.14.3 - 2023-01-03
 ### Changed
@@ -16,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - NewCops rule can only be defined once.
 
-## 6.14.0 - 2022-09-6
+## 6.14.0 - 2022-09-06
 ### Changed
 - Support new rules introduced between rubocop 1.26 -> 1.36
 
@@ -143,6 +149,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Disable new Gemspec/RequireMFA cop
 
 ## 6.12.0 - 2021-12-06
+### Changed
 - Update `rubocop-vendor`, which disallows `recursive-open-struct`
 
 ## 6.11.3 - 2021-11-19
@@ -188,37 +195,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded rubocop to 1.19.1
 
 ## 6.9.5 - 2021-07-28
+### Changed
 - Upgraded rubocop to 1.18.4
 
 ## 6.9.4 - 2021-07-20
+### Changed
 - Upgraded dependencies
 
 ## 6.9.3 - 2021-07-20
+### Changed
 - Upgraded rubocop to 1.18.2
 - Upgraded rubocop-rais to 2.11.2
 
 ## 6.9.2 - 2021-06-28
+### Changed
 - Update dependencies
 
 ## 6.9.1 - 2021-05-06
+### Changed
 - Migrate CI from CircleCI to GitHub Actions
 - Change default GitHub branch to `main`
 
 ## 6.9.0 - 2021-04-06
+### Changed
 - Upgraded rubocop to 1.12.1
 - Upgraded rubocop-performance to 1.10.2
 - Upgraded rubocop-vendor to 0.6.0
 
 ## 6.8.9 - 2021-04-02
+### Changed
 - Set minimum required ruby version to 2.7.2
 
 ## 6.7.2 - 2021-03-15
+### Changed
 - Increase Metrics/MethodLength to 25 (1/6 of class length).
 
 ## 6.7.1 - 2021-03-09
+### Changed
 - Disable Lint/EmptyBlock
 
 ## 6.7.0 - 2021-03-05
+### Changed
 - Upgraded rubocop to 1.11.0
 - Upgraded rubocop-performance to 1.10.1
 - Upgraded rubocop-rails to 2.9.1
@@ -226,42 +243,55 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgraded rubocop-vendor to 0.5.0
 
 ## 6.6.3 - 2021-03-01
+### Changed
 - One more version bump to get it published
 
 ## 6.6.2 - 2021-03-01
+### Changed
 - Use GitHub Actions to publish gem
 
 ## 6.6.1 - 2021-03-01
+### Changed
 - Mostly just trying to get the version number bumped
 
 ## 6.6.0 - 2021-01-16
+### Changed
 - Rubocop FilePath should respect ActiveSupport::Inflector config if included
 
 ## 6.5.3 - 2020-12-17
+### Changed
 - Disable extension suggestions
 
 ## 6.5.2 - 2020-12-17
+### Changed
 - Add backstage catalog file + sonarqube project settings
 
 ## 6.5.1 - 2020-11-30
+### Changed
 - Disable EmptyLineBetweenClassDefs added in rubocop 1.4
 
 ## 6.5.0 - 2020-10-26
+### Changed
 - Upgrade RuboCop and RuboCop RSpec
 
 ## 6.4.0 - 2020-10-07
+### Changed
 - Upgrade RuboCop
 
 ## 6.3.0 - 2020-10-06
+### Changed
 - Upgrade RuboCop and enable cops that were voted in
 
 ## 6.2.0 - 2020-09-04
+### Changed
 - Disable Cops enabled in 6.1.0 until we can confirm we want them
 
 ## 6.1.1 - 2020-09-04
+### Changed
 - Disable RSpec/MultipleMemoizedHelpers cop
 
 ## 6.1.0 - 2020-08-27
+### Changed
 - Upgraded rubocop to 0.89
 - Upgraded rubocop-performance to 1.7
 - Upgraded rubocop-rails to 2.7
@@ -283,9 +313,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 5.1.0 - 2019-06-06
 ### Changed
 - Added indentation cop, enforcing 2 space indentation.
-
   This allows Rubocop to automatically format code like this:
-
   ```ruby
   class Wizard
   def cast_spell
@@ -293,9 +321,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   end
   end
   ```
-
   into this:
-
   ```ruby
   class Wizard
     def cast_spell
