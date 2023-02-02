@@ -21,7 +21,7 @@ GEM
     ast (2.4.2)
     bundler-audit (0.9.1)
       bundler (>= 1.2.0, < 3)
-      thor (>= 0.18, < 2)
+      thor (~> 1.0)
     concurrent-ruby (1.2.0)
     diff-lcs (1.5.0)
     git (1.13.1)
@@ -30,11 +30,9 @@ GEM
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     json (2.6.3)
-    keepachangelog (0.6.1)
-      json (~> 2.1)
-      thor (~> 0.20)
     minitest (5.17.0)
     parallel (1.22.1)
+    parse_a_changelog (1.2.0)
     parser (3.2.0.0)
       ast (~> 2.4.1)
     public_suffix (5.0.1)
@@ -84,7 +82,7 @@ GEM
     rubocop-vendor (0.8.10)
       rubocop (>= 0.53.0)
     ruby-progressbar (1.11.0)
-    thor (0.20.3)
+    thor (1.2.1)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
@@ -96,7 +94,7 @@ DEPENDENCIES
   bundler
   bundler-audit (~> 0.9.1)
   git
-  keepachangelog
+  parse_a_changelog
   rake
   rspec (~> 3.12.0)
   ws-style!

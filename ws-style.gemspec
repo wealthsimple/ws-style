@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'bundler-audit', '~> 0.9.1'
   s.add_development_dependency 'git'
-  s.add_development_dependency 'keepachangelog'
+  s.add_development_dependency 'parse_a_changelog'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec', '~> 3.12.0'
 end
