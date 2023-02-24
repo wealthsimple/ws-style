@@ -20,7 +20,7 @@ jobs:
       - name: Fetch main branch
         run: git fetch origin main
       - uses: r7kamura/rubocop-problem-matchers-action@v1
-        name: Lint
+      - name: Lint
         run:
           bundle exec rubocop
           bundle exec bundle-audit update
