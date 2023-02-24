@@ -20,10 +20,11 @@ jobs:
       - name: Fetch main branch
         run: git fetch origin main
       - uses: r7kamura/rubocop-problem-matchers-action@v1
-      - uses: wealthsimple/toolbox-script@main
-        name: RuboCop
-        with:
-          script: toolbox.ruby.lint.run()
+      - name: Lint
+        run: |
+          bundle exec rubocop
+          bundle exec bundle-audit update
+          bundle exec bundle-audit check
       - name: Run rspec
         run: bundle exec rspec
       - name: Release the gem
