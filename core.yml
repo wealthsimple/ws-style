@@ -135,6 +135,9 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+  
+Lint/SafeNavigationChain:
+  Enabled: true
 
 Style/WordArray:
   Enabled: false
