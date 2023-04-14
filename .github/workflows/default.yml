@@ -1,5 +1,5 @@
 ---
-name: Pipeline
+name: Default
 on:
   - push
 concurrency:
