@@ -634,7 +634,7 @@ RSpec/ChangeByZero:
   Enabled: True
 
 # rubocop-rspec 2.12
-RSpec/Capybara/SpecificMatcher:
+Capybara/SpecificMatcher:
   Enabled: False
 
 RSpec/Rails/HaveHttpStatus:

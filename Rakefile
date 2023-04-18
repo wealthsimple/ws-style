@@ -24,8 +24,10 @@ task :election do
       'rspec_factorybot' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec_factorybot.html',
       'rspec_rails' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec_rails.html',
       'security' => 'https://docs.rubocop.org/rubocop/cops_security.html#security',
-      'style' => 'https://docs.rubocop.org/rubocop/cops_style.html#style',
-      'naming' => 'https://docs.rubocop.org/rubocop/cops_naming.html#naming',
+      'style' => 'https://docs.rubocop.org/rubocop/cops_style.html',
+      'naming' => 'https://docs.rubocop.org/rubocop/cops_naming.html',
+      'metrics' => 'https://docs.rubocop.org/rubocop/cops_metrics.html',
+      'capybara' => 'https://docs.rubocop.org/rubocop-rspec/cops_rspec_capybara.html',
     }
     next if configuration.key?(pending_cop.name)
 
