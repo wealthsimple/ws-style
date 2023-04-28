@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 6.14.6 - 2023-04-28
+### Changed
+- Removed support for Ruby 2 since it is EOL
+
 ## 6.14.5 - 2023-02-23
 ### Changed
 - Remove use of toolbox-script in Github workflows
