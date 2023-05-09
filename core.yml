@@ -637,12 +637,154 @@ RSpec/ChangeByZero:
 Capybara/SpecificMatcher:
   Enabled: False
 
-RSpec/Rails/HaveHttpStatus:
-  Enabled: True
-
 # rubocop-rspec 2.9.0
 RSpec/BeEq:
   Enabled: True
 
 RSpec/BeNil:
   Enabled: True
+
+# 1.37
+Lint/DuplicateMagicComment:
+  Enabled: True
+
+Style/OperatorMethodCall:
+  Enabled: True
+
+Style/RedundantStringEscape:
+  Enabled: True
+
+# 1.38
+Style/RedundantEach:
+  Enabled: True
+
+# 1.40
+Style/ArrayIntersect:
+  Enabled: True
+
+Style/RedundantConstantBase:
+  Enabled: True
+
+# 1.41
+Style/ConcatArrayLiterals:
+  Enabled: True
+
+Style/RedundantDoubleSplatHashBraces:
+  Enabled: True
+
+# 1.42
+Style/MapToSet:
+  Enabled: True
+
+Style/MinMaxComparison:
+  Enabled: True
+
+# 1.43
+Lint/UselessRescue:
+  Enabled: True
+
+# 1.44
+Gemspec/DevelopmentDependencies:
+  Enabled: True
+
+Style/ComparableClamp:
+  Enabled: True
+
+# 1.45
+Style/RedundantHeredocDelimiterQuotes:
+  Enabled: True
+
+# 1.47
+Metrics/CollectionLiteralLength:
+  Enabled: False
+
+# 1.48
+Style/DirEmpty:
+  Enabled: True
+
+Style/FileEmpty:
+  Enabled: True
+
+# 1.49
+Style/DataInheritance:
+  Enabled: True
+
+Style/RedundantLineContinuation:
+  Enabled: True
+
+# 1.50
+Lint/DuplicateMatchPattern:
+  Enabled: True
+
+# 2.12
+RSpec/Capybara/SpecificMatcher:
+  Enabled: True
+
+# 2.13
+Capybara/SpecificFinders:
+  Enabled: True
+
+RSpec/ClassCheck:
+  Enabled: True
+
+RSpec/NoExpectationExample:
+  Enabled: True
+
+RSpec/Capybara/SpecificFinders:
+  Enabled: True
+
+# 2.14
+Capybara/NegationMatcher:
+  Enabled: True
+
+Capybara/SpecificActions:
+  Enabled: True
+
+RSpec/SortMetadata:
+  Enabled: False
+
+RSpec/Capybara/NegationMatcher:
+  Enabled: True
+
+RSpec/Capybara/SpecificActions:
+  Enabled: True
+
+RSpec/FactoryBot/ConsistentParenthesesStyle:
+  Enabled: True
+
+# 2.16
+RSpec/DuplicatedMetadata:
+  Enabled: True
+
+RSpec/PendingWithoutReason:
+  Enabled: True
+
+RSpec/FactoryBot/FactoryNameStyle:
+  Enabled: True
+
+# 2.17
+Capybara/MatchStyle:
+  Enabled: True
+
+RSpec/Capybara/MatchStyle:
+  Enabled: True
+
+# 2.19
+RSpec/ContainExactly:
+  Enabled: True
+
+RSpec/MatchArray:
+  Enabled: False
+
+RSpec/RedundantAround:
+  Enabled: True
+
+RSpec/SkipBlockInsideExample:
+  Enabled: True
+
+# 2.20
+RSpec/BeEmpty:
+  Enabled: True
+
+RSpec/IndexedLet:
+  Enabled: False

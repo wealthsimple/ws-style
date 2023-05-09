@@ -167,3 +167,35 @@ Rails/TopLevelHashWithIndifferentAccess:
 
 Rails/WhereMissing:
   Enabled: True
+
+# rubocop-rspec 2.12
+RSpec/Rails/HaveHttpStatus:
+  Enabled: True
+
+# 2.14
+RSpec/Rails/InferredSpecType:
+  Enabled: False
+
+# 2.17
+Rails/ActionOrder:
+  Enabled: False
+
+Rails/IgnoredColumnsAssignment:
+  Enabled: True
+
+Rails/WhereNotWithMultipleConditions:
+  Enabled: True
+
+RSpec/Rails/MinitestAssertions:
+  Enabled: True
+
+# 2.18
+Rails/ResponseParsedBody:
+  Enabled: True
+
+# 2.19
+Rails/ThreeStateBooleanColumn:
+  Enabled: True
+
+RSpec/Rails/TravelAround:
+  Enabled: True
