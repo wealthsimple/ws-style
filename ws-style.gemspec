@@ -27,11 +27,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'rubocop-rails', '>= 2.9.1'
   s.add_dependency 'rubocop-rspec', '>= 2.2.0'
   s.add_dependency 'rubocop-vendor', '>= 0.6.0'
-
-  s.add_development_dependency 'bundler'
-  s.add_development_dependency 'bundler-audit'
-  s.add_development_dependency 'git'
-  s.add_development_dependency 'parse_a_changelog'
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '~> 3.12.0'
 end
