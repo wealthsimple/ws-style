@@ -568,10 +568,6 @@ Style/MapToHash:
 Style/HashSyntax:
   EnforcedShorthandSyntax: never
 
-# rubocop-rspec 2.7
-RSpec/FactoryBot/SyntaxMethods:
-  Enabled: False
-
 # rubocop 1.26
 Style/NestedFileDirname:
   Enabled: True
@@ -634,9 +630,6 @@ RSpec/ChangeByZero:
   Enabled: True
 
 # rubocop-rspec 2.12
-RSpec/Capybara/SpecificMatcher:
-  Enabled: False
-
 RSpec/Rails/HaveHttpStatus:
   Enabled: True
 
@@ -646,3 +639,10 @@ RSpec/BeEq:
 
 RSpec/BeNil:
   Enabled: True
+
+# rubocop-rspec 2.22
+Capybara/SpecificMatcher:
+  Enabled: False
+
+FactoryBot/SyntaxMethods:
+  Enabled: False
