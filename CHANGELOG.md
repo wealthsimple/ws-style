@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 6.14.7 - 2023-05-10
+### Changed
+- Address rubocop warnings
+
 ## 6.14.6 - 2023-04-28
 ### Changed
 - Removed support for Ruby 2 since it is EOL
