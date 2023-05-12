@@ -103,6 +103,9 @@ Metrics/PerceivedComplexity:
 Style/AndOr:
   EnforcedStyle: conditionals
 
+Style/Send:
+  Enabled: true
+
 Style/BlockDelimiters:
   Enabled: false
 

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 6.14.8 - 2023-05-12
+### Changed
+- Add Send style warning, since its dangerous
+
 ## 6.14.7 - 2023-05-10
 ### Changed
 - Address rubocop warnings
