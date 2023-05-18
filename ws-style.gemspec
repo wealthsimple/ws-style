@@ -20,11 +20,10 @@ Gem::Specification.new do |s|
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
-  s.required_ruby_version = '>= 3.0'
+  s.required_ruby_version = '>= 3.2.0'
 
-  s.add_dependency 'rubocop', '>= 1.36'
-  s.add_dependency 'rubocop-performance', '>= 1.10.2'
-  s.add_dependency 'rubocop-rails', '>= 2.9.1'
+  s.add_dependency 'standard', '>= 1.28.2'
+  s.add_dependency 'standard-rails', '>= 0.1.0'
   s.add_dependency 'rubocop-rspec', '>= 2.2.0'
   s.add_dependency 'rubocop-vendor', '>= 0.6.0'
 
