@@ -1,3 +1,4 @@
 inherit_from:
   - core.yml
+  - rspec.yml
   - rails.yml

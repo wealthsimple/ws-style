@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.0.0 - 2023-05-18
+### Changed
+- Use [standardrb](https://github.com/standardrb/standard) as a base.
+
 ## 6.14.7 - 2023-05-10
 ### Changed
 - Address rubocop warnings
