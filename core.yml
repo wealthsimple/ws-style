@@ -17,8 +17,6 @@ inherit_gem:
   standard-custom: config/base.yml
 
 AllCops:
-  NewCops: disable
-  DisabledByDefault: true
   SuggestExtensions: false
   TargetRubyVersion: 3.2
   Exclude:
