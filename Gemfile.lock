@@ -3,7 +3,7 @@ PATH
   specs:
     ws-style (7.0.0)
       rubocop-rspec (>= 2.2.0)
-      rubocop-vendor (>= 0.6.0)
+      rubocop-vendor (>= 0.11.0)
       standard (>= 1.28.2)
       standard-rails (>= 0.1.0)
 

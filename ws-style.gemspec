@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'standard', '>= 1.28.2'
   s.add_dependency 'standard-rails', '>= 0.1.0'
   s.add_dependency 'rubocop-rspec', '>= 2.2.0'
-  s.add_dependency 'rubocop-vendor', '>= 0.6.0'
+  s.add_dependency 'rubocop-vendor', '>= 0.11'
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'bundler-audit'
