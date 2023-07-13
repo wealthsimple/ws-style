@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.1.2 - 2023-07-13
+### Changed
+- Fix missing cop error with standard 1.3.0
+
 ## 7.1.1 - 2023-06-19
 ### Changed
 - Added Gitleaks as a pre-commit step
