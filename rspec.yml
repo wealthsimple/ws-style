@@ -1,6 +1,9 @@
 require:
   - rubocop-rspec
 
+RSpec:
+  Enabled: true
+
 # rubocop-rspec overrides
 RSpec/AnyInstance:
   Enabled: false

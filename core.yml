@@ -29,7 +29,6 @@ AllCops:
     - "db/migrate/**/*"
     - "db/schema.rb"
     - "gemfiles/**/*"
-    - "lib/tasks/circle_0.rake"
     - "log/**/*"
     - "node_modules/**/*"
     - "public/**/*"
@@ -72,3 +71,7 @@ Style/TrailingCommaInArguments:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
+
+# enable rubocop-vendor
+Vendor:
+  Enabled: true
