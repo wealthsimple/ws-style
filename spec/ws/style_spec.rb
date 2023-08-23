@@ -35,20 +35,25 @@ RSpec.describe 'a published gem' do # rubocop:disable RSpec/DescribeClass
     base = git.merge_base(main_branch, 'HEAD').first&.sha
     base ||= main_branch
     git.diff(base, 'HEAD').any? { |diff|
-      not_gemfile?(diff) && not_lockfile?(diff) && not_ci_file?(diff)
+      not_gemfile?(diff) && not_dotfile?(diff) && not_docs?(diff) && not_spec?(diff)
     }
   end
 
-  def not_lockfile?(diff)
-    diff.path != 'Gemfile.lock'
-  end
-
   def not_gemfile?(diff)
-    diff.path != 'Gemfile'
+    !['Gemfile', 'Gemfile.lock'].include?(diff.path)
   end
 
-  def not_ci_file?(diff)
-    !diff.path.start_with?('.github/')
+  def not_docs?(diff)
+    !diff.path.end_with?('.md')
+  end
+
+  def not_spec?(diff)
+    !diff.path.start_with?('spec/')
+  end
+
+  def not_dotfile?(diff)
+    # Ignore dotfiles, like .gitignore and CI files like .github/...
+    !diff.path.start_with?('.')
   end
 
   let(:git) { Git.open('.') }
