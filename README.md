@@ -1,5 +1,5 @@
 # ws-style
-[![Github Actions Badge](https://github.com/wealthsimple/ws-style/actions/workflows/pipeline.yml/badge.svg)](https://github.com/wealthsimple/ws-style/actions)
+[![Default](https://github.com/wealthsimple/ws-style/actions/workflows/default.yml/badge.svg)](https://github.com/wealthsimple/ws-style/actions/workflows/default.yml)
 
 Shared [rubocop](https://github.com/bbatsov/rubocop) config to enforce Ruby style consistently across Wealthsimple libraries and services.
 
