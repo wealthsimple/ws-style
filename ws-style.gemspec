@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.bindir = 'exe'
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
-  s.required_ruby_version = '>= 3.2.0'
+  s.required_ruby_version = '>= 3.0'
 
   s.add_dependency 'standard', '>= 1.30.1'
   s.add_dependency 'standard-custom', '>= 1.0.2'

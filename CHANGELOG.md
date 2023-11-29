@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.2.1 - 2023-11-28
+### Changed
+- Support older versions of Ruby
+
 ## 7.2.0 - 2023-07-14
 ### Changed
 - Fix issue where rubocop-rspec was disabled by default after the switch to standardrb
