@@ -7,3 +7,6 @@ inherit_gem:
 # standard-rails overrides
 Rails/EnvironmentVariableAccess:
   Enabled: false
+
+Rails/DynamicFindBy:
+  Enabled: false
