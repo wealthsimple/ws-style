@@ -23,6 +23,9 @@ RSpec/LetSetup:
 RSpec/MessageChain:
   Enabled: false
 
+RSpec/MessageSpies:
+  Enabled: false
+
 RSpec/MultipleExpectations:
   Enabled: false
 
@@ -34,3 +37,6 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+RSpec/StubbedMock:
+  Enabled: false
