@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.3.0 - 2023-01-11
+### Changed
+- Disable some cops which don't add significant value
+
 ## 7.2.1 - 2023-11-28
 ### Changed
 - Support older versions of Ruby
