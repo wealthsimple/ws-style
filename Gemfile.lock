@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    ws-style (7.3.0)
+    ws-style (7.4.0)
+      rubocop-factory_bot (>= 2.25.1)
       rubocop-rspec (>= 2.2.0)
       rubocop-vendor (>= 0.11)
       standard (>= 1.30.1)
