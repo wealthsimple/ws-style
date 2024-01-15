@@ -11,6 +11,7 @@ require:
   - standard-custom
   - rubocop-performance
   - rubocop-vendor
+  - rubocop-factory_bot
 
 inherit_gem:
   standard: config/base.yml
