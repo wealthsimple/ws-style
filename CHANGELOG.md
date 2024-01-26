@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.4.2 - 2024-01-26
+### Changed
+- Disable `Rails/BulkChangeTable` rule
+
 ## 7.4.1 - 2024-01-19
 ### Changed
 - Fix incorrect factory bot configuration

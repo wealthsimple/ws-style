@@ -13,3 +13,6 @@ Rails/EnvironmentVariableAccess:
 
 Rails/PluckId:
   Enabled: false
+
+Rails/BulkChangeTable:
+  Enabled: false
