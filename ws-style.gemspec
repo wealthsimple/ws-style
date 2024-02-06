@@ -33,5 +33,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'git'
   s.add_development_dependency 'parse_a_changelog'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '~> 3.12.0'
+  s.add_development_dependency 'rspec', '~> 3.13.0'
 end
