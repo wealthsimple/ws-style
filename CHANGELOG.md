@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.4.3 - 2024-02-12
+### Changed
+- Updated rspec dependency
+
 ## 7.4.2 - 2024-01-26
 ### Changed
 - Disable `Rails/BulkChangeTable` rule
