@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.4.4 - 2024-02-12
+### Changed
+- Ignore all migration folders in multi database
+
 ## 7.4.3 - 2024-02-12
 ### Changed
 - Updated rspec dependency
