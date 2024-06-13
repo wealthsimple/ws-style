@@ -13,3 +13,5 @@ module Ws
     end
   end
 end
+
+::RuboCop::Cop::RSpec::SpecFilePathFormat.prepend Ws::Style::Inflector
