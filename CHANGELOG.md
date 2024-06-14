@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.5.0 - 2024-06-13
+### Changed
+- Upgraded rubocop-rspec to verion 3.0.0
+- Added rubocop-factory_bot since it is no longer included in rubocop-rspec
+- Removed reference to Rspec::Filepath since it no longer exists
+
 ## 7.4.4 - 2024-02-12
 ### Changed
 - Ignore all migration folders in multi database
