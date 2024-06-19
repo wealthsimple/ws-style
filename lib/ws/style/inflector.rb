@@ -7,7 +7,7 @@ module Ws
         if defined?(ActiveSupport::Inflector)
           ActiveSupport::Inflector.underscore(string)
         else
-          super(string)
+          super
         end
       end
     end
