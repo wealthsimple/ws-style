@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.5.1 - 2024-06-19
+### Changed
+- Updated dependencies
+
 ## 7.5.0 - 2024-06-13
 ### Changed
 - Upgraded rubocop-rspec to verion 3.0.0
