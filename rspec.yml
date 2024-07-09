@@ -21,6 +21,9 @@ RSpec/EmptyExampleGroup:
 RSpec/ExampleLength:
   Max: 30
 
+RSpec/IndexedLet:
+  Enabled: false
+
 RSpec/LetSetup:
   Enabled: false
 
@@ -41,6 +44,9 @@ RSpec/NamedSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+RSpec/SpecFilePathFormat:
+  Enabled: false
 
 RSpec/StubbedMock:
   Enabled: false

@@ -16,3 +16,6 @@ Rails/PluckId:
 
 Rails/BulkChangeTable:
   Enabled: false
+
+Rails/WhereRange:
+  Enabled: false
