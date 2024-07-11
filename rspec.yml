@@ -5,9 +5,6 @@ require:
 RSpec:
   Enabled: true
 
-FactoryBot:
-  Enabled: true
-
 # rubocop-rspec overrides
 RSpec/AnyInstance:
   Enabled: false
