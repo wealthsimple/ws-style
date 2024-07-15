@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.6.1 - 2024-07-15
+### Changed
+- Removed the rubocop factorybot stuff, since we aren't using factorybot anymore
+
 ## 7.6.0 - 2024-07-09
 ### Changed
 - Disable some newer cops
