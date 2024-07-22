@@ -61,7 +61,7 @@ GEM
     rake (13.2.1)
     rchardet (1.8.0)
     regexp_parser (2.9.2)
-    rexml (3.3.1)
+    rexml (3.3.2)
       strscan
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -101,10 +101,10 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
     rubocop-rspec (3.0.3)
       rubocop (~> 1.61)
-    rubocop-vendor (0.13.0)
+    rubocop-vendor (0.13.1)
       rubocop
     ruby-progressbar (1.13.0)
-    standard (1.39.1)
+    standard (1.39.2)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.64.0)
