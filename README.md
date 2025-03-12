@@ -46,7 +46,6 @@ inherit_gem:
     - default.yml
 
 AllCops:
-  TargetRubyVersion: 3.2
   Include:
     - 'db/**/*'
 
