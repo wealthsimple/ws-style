@@ -8,6 +8,8 @@ inherit_mode:
 
 require:
   - standard
+
+plugins:
   - standard-custom
   - rubocop-performance
   - rubocop-vendor
@@ -21,7 +23,6 @@ AllCops:
   NewCops: disable
   DisabledByDefault: true
   SuggestExtensions: false
-  TargetRubyVersion: 3.2
   Exclude:
     - "bin/**/*"
     - "data/**/*"
