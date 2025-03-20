@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 7.7.2 - 2024-03-20
+### Changed
+- Revert 7.7.1
+
 ## 7.7.1 - 2024-03-17
 ### Changed
 - Switch to standard-rails fork to upgrade rubocop-rails and resolve noisy warnings.
